@@ -1,0 +1,23 @@
+# ::::::::::::: CALCULATOR WHICH TAKE INPUT FROM USER ::::::::::::: #
+num_1=int(input("Enter Number 1 :- "))
+num_2=int(input("Enter Number 2 :- "))
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def multi(a,b):
+    return a*b
+def divide(a,b):
+    return a/b
+oprn=input("Enter any operation that you need to apply (*,/,+,-) :- ")
+if(oprn=='+'):
+    print(f'Sum of {num_1} and {num_2} is : ',add(num_1,num_2))
+elif(oprn=='-'):
+    print(f'Sum of {num_1} and {num_2} is : ',sub(num_1,num_2))
+elif(oprn=='*'):
+    print(f'Sum of {num_1} and {num_2} is : ',multi(num_1,num_2))
+elif(oprn=='/'):
+    print(f'Sum of {num_1} and {num_2} is : ',divide(num_1,num_2))
+else:
+    print("You have entered a wrong operation :(" )
+print('Thank You :) ')
